@@ -1,6 +1,7 @@
 const API_URL = 'https://icanhazdadjoke.com/'; 
 let currentJoke; 
-let reportJokes = []; 
+let reportJokes = [];
+let isFirstJoke = true;
 
 function getUser() {
   fetch(API_URL, {
@@ -12,6 +13,10 @@ function getUser() {
 }
 
 function jokeFeedback(score) {
+  if (isFirstJoke) {
+    isFirstJoke = false;
+    return;
+  }
   const date = new Date();
   const actualDate = date.toISOString(); 
   const jokeParams = {
