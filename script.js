@@ -3,8 +3,6 @@ const API_WEATHER = 'https://api.openweathermap.org/data/2.5/weather?q=Barcelona
 const API_CHUCKNORRIS = 'https://api.chucknorris.io/jokes/random'; 
 let currentJoke; 
 let currentChuckNorrisJoke; 
-let currentWeather; 
-let currentTemperature; 
 let reportJokes = [];
 let isFirstJoke = true;
 getWeather(); 
@@ -12,7 +10,7 @@ let randomNumber = true;
 
 function printJokes() {
   if (randomNumber) {
-    getUser();
+    getJokes();
     randomNumber = false;
     return; 
   } else {
@@ -22,7 +20,7 @@ function printJokes() {
   }
 }
 
-function getUser() {
+function getJokes() {
   fetch(API_JOKES, {
     headers: { Accept: 'application/json' }
   })
@@ -42,8 +40,18 @@ function getJokesChuckNorris() {
 function getWeather() {
   fetch(API_WEATHER)
     .then(response => response.json())
-    .then(data => currentWeather = data.weather[0].description)
-    .then(() => document.getElementById('weather').innerHTML = currentWeather); 
+    .then(data => {
+      document.getElementById('weather').src = drawIconWeather(data.weather[0].icon);
+      return data;
+    })
+    .then(data => {
+      const temp = Number(data.main.temp) - 273.15;
+      document.getElementById('temp').innerText = temp.toFixed(2) + ' ºC';
+    }); 
+}
+
+function drawIconWeather(icon) {
+  return 'https://openweathermap.org/img/wn/' + icon + '.png';
 }
 
 function jokeFeedback(score) {
