@@ -1,0 +1,200 @@
+
+@media (min-width: 576px) {
+  #fondoBottom {
+    display: block;
+    z-index: -1;
+    height: auto;
+    max-width: 15%;
+    position: relative;
+    margin-right: auto;
+    margin-left: 8%;
+    margin-top: 50%; 
+  }
+  
+  #fondoRight {
+    z-index: -1;
+    height: auto;
+    width: 15%;
+    margin-left: 80%;
+  }
+  
+  body {
+    background-image: url('file:///C:/Users/merig/Downloads/blob%20(1).svg');
+    background-repeat: no-repeat;
+    background-position:center;
+    height: 650px;
+  }
+  
+  .line {
+    border-left: 4px solid #08BDBA;
+    height: 50px;
+    position: absolute;
+    left: 7%;
+    top: 2%;
+  }
+  
+  .card {
+    background-color: transparent;
+    border: none;
+  }
+
+  .card-body {
+    padding-top: 5px;
+  }
+  
+  .btn {
+    margin-top: 50px;
+    border-color: #ffa500;
+    background: rgb(242,133,6);
+    background: linear-gradient(rgba(228,255,0,1), rgba(242,133,6,1));
+  }  
+}
+
+
+@media (min-width: 768px) { 
+  #fondoBottom {
+    display: block;
+    z-index: -1;
+    height: auto;
+    max-width: 15%;
+    position: relative;
+    margin-right: auto;
+    margin-left: 8%;
+    margin-top: 40%; 
+  }
+  
+  #fondoRight {
+    z-index: -1;
+    height: auto;
+    width: 15%;
+    margin-left: 80%;
+  }
+  
+  body {
+    background-image: url('file:///C:/Users/merig/Downloads/blob%20(1).svg');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-position-y: 200px;
+    height: 650px;
+  }
+  
+  .line {
+    border-left: 4px solid #08BDBA;
+    height: 50px;
+    position: absolute;
+    left: 7%;
+    top: 2%;
+  }
+  
+  .card {
+    background-color: transparent;
+    border: none;
+  }
+  
+  .btn {
+    margin-top: 50px;
+    border-color: #ffa500;
+    background: rgb(242,133,6);
+    background: linear-gradient(rgba(228,255,0,1), rgba(242,133,6,1));
+  }  
+} 
+
+
+@media (min-width: 992px) {
+  #fondoBottom {
+    display: block;
+    z-index: -1;
+    height: auto;
+    max-width: 15%;
+    position: relative;
+    margin-right: auto;
+    margin-left: 8%;
+    margin-top: 15%; 
+  }
+  
+  #fondoRight {
+    z-index: -1;
+    height: auto;
+    width: 15%;
+    margin-left: 75%;
+  }
+  
+  body {
+    background-image: url('file:///C:/Users/merig/Downloads/blob%20(1).svg');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 0px;
+    height: 650px;
+  }
+  
+  .line {
+    border-left: 4px solid #08BDBA;
+    height: 50px;
+    position: absolute;
+    left: 7%;
+    top: 2%;
+  }
+  
+  .card {
+    background-color: transparent;
+    border: none;
+  }
+  
+  .btn {
+    margin-top: 50px;
+    border-color: #ffa500;
+    background: rgb(242,133,6);
+    background: linear-gradient(rgba(228,255,0,1), rgba(242,133,6,1));
+  }
+}
+
+@media (min-width: 1200px) {
+  #fondoBottom {
+    display: block;
+    z-index: -1;
+    height: auto;
+    max-width: 15%;
+    position: relative;
+    margin-right: auto;
+    margin-left: 8%;
+    margin-top: 10%; 
+  }
+  
+  #fondoRight {
+    z-index: -1;
+    height: auto;
+    width: 15%;
+    margin-left: 75%;
+    
+  }
+  
+  body {
+    background-image: url('file:///C:/Users/merig/Downloads/blob%20(1).svg');
+    background-repeat: no-repeat;
+    background-position:center;
+    height: 650px;
+  }
+  
+  .line {
+    border-left: 4px solid #08BDBA;
+    height: 50px;
+    position: absolute;
+    top: 2%;
+  }
+  
+  .card {
+    background-color: transparent;
+    border: none;
+  }
+  
+  .btn {
+    margin-top: 50px;
+    border-color: #ffa500;
+    background: rgb(242,133,6);
+    background: linear-gradient(rgba(228,255,0,1), rgba(242,133,6,1));
+  }  
+}
+
+
+
+/* trello cada 2 semanas */
